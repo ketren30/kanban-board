@@ -1,0 +1,52 @@
+.block {
+    float: left;
+    margin: 30px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+    padding: 0;
+}
+.toDo-tasks {
+    width: 230px;
+    height: 23px;
+    line-height: 23px;
+    margin: 5px auto;
+    background-color: rgb(241, 89, 89);
+    list-style-type: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.header {
+    margin: 10px 20px;
+    margin-bottom: 0;
+}
+.action {
+    font-size: large;
+    float:right;
+    cursor: pointer;
+}
+.tasks-enter {
+    opacity: 0.01;
+}
+
+.tasks-enter.tasks-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.tasks-exit {
+    opacity: 1;
+}
+
+.tasks-exit.tasks-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

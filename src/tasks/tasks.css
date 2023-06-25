@@ -1,0 +1,86 @@
+.block {
+    width: 30%;
+    height: fit-content;
+    border-radius: 15px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block ul {
+    padding: 0;
+    width: 90%;
+}
+.block p {
+    margin: 0;
+}
+.tasks-list {
+    width: 96%;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    list-style-type: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.action {
+    cursor: pointer;
+}
+.editing {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.add, .delete-all {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 250, 154, 0.514);
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+.delete-all {
+    width: fit-content;
+    background-color: rgb(245, 177, 150);
+    font-size: 20px;
+}
+.add-task {
+    border-bottom: 1px solid rgb(199, 194, 194);
+    width: calc(90% - 20px);
+    margin: 5px 0;
+    font-size: 20px;
+    color: rgb(109, 107, 107);
+    padding: 2px 10px;
+}
+
+.tasks-enter {
+    opacity: 0.01;
+}
+
+.tasks-enter.tasks-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.tasks-exit {
+    opacity: 1;
+}
+
+.tasks-exit.tasks-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
